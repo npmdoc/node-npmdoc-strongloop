@@ -1,0 +1,696 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://www.strongloop.com">strongloop (v6.0.3)</a>
+</h1>
+<h4>StrongLoop Command Line Tools</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.strongloop">module strongloop</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader">
+            function <span class="apidocSignatureSpan">strongloop.</span>loader
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">strongloop.</span>loader.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.strongloop.loader">module strongloop.loader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.loader">
+            function <span class="apidocSignatureSpan">strongloop.</span>loader
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.createLoader">
+            function <span class="apidocSignatureSpan">strongloop.loader.</span>createLoader
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.isCommand">
+            function <span class="apidocSignatureSpan">strongloop.loader.</span>isCommand
+            <span class="apidocSignatureSpan">(module)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.super_">
+            function <span class="apidocSignatureSpan">strongloop.loader.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.strongloop.loader.prototype">module strongloop.loader.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.error">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>error
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.getRun">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>getRun
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.getUsage">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>getUsage
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.loadCommand">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>loadCommand
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.loadManual">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>loadManual
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.parse">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>parse
+            <span class="apidocSignatureSpan">(argv, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.printUsage">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>printUsage
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.strongloop.loader.prototype.run">
+            function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>run
+            <span class="apidocSignatureSpan">(argv)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.strongloop" id="apidoc.module.strongloop">module strongloop</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader" id="apidoc.element.strongloop.loader">
+        function <span class="apidocSignatureSpan">strongloop.</span>loader
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CommandLoader(obj) {
+  if (!(this instanceof CommandLoader)) {
+    return new CommandLoader(obj);
+  }
+
+  obj = obj || {};
+
+  this.root = obj.root || path.resolve(__dirname, 'commands');
+  this.strict = true;
+  this.usage = obj.usage || 'help';
+  this.fallback = obj.fallback || this.usage;
+  this.default = obj.default || this.usage;
+  this.manuals = obj.manuals || null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.strongloop.loader" id="apidoc.module.strongloop.loader">module strongloop.loader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.loader" id="apidoc.element.strongloop.loader.loader">
+        function <span class="apidocSignatureSpan">strongloop.</span>loader
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CommandLoader(obj) {
+  if (!(this instanceof CommandLoader)) {
+    return new CommandLoader(obj);
+  }
+
+  obj = obj || {};
+
+  this.root = obj.root || path.resolve(__dirname, 'commands');
+  this.strict = true;
+  this.usage = obj.usage || 'help';
+  this.fallback = obj.fallback || this.usage;
+  this.default = obj.default || this.usage;
+  this.manuals = obj.manuals || null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.createLoader" id="apidoc.element.strongloop.loader.createLoader">
+        function <span class="apidocSignatureSpan">strongloop.loader.</span>createLoader
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CommandLoader(obj) {
+  if (!(this instanceof CommandLoader)) {
+    return new CommandLoader(obj);
+  }
+
+  obj = obj || {};
+
+  this.root = obj.root || path.resolve(__dirname, 'commands');
+  this.strict = true;
+  this.usage = obj.usage || 'help';
+  this.fallback = obj.fallback || this.usage;
+  this.default = obj.default || this.usage;
+  this.manuals = obj.manuals || null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#!/usr/bin/env node
+// Copyright IBM Corp. 2015,2016. All Rights Reserved.
+// Node module: strongloop
+// This file is licensed under the Artistic License 2.0.
+// License text available at https://opensource.org/licenses/Artistic-2.0
+
+require('../lib/loader')
+.<span class="apidocCodeKeywordSpan">createLoader</span>({
+  manuals: require('path').resolve(__dirname, '..', 'man')
+})
+.on('error', function(err) {
+  console.error(err.message);
+  process.exit(1);
+})
+.run();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.isCommand" id="apidoc.element.strongloop.loader.isCommand">
+        function <span class="apidocSignatureSpan">strongloop.loader.</span>isCommand
+        <span class="apidocSignatureSpan">(module)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isCommand(module) {
+  return !!module &amp;&amp; typeof module.run === 'function';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this.default = obj.default || this.usage;
+  this.manuals = obj.manuals || null;
+}
+util.inherits(CommandLoader, EventEmitter);
+CommandLoader.createLoader = CommandLoader;
+
+//
+// ## isCommand `CommandLoader.<span class="apidocCodeKeywordSpan">isCommand</span>(module)`
+//
+// Returns `true` if **module** is a valid Command, `false` otherwise.
+//
+CommandLoader.isCommand = isCommand;
+function isCommand(module) {
+  return !!module &amp;&amp; typeof module.run === 'function';
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.super_" id="apidoc.element.strongloop.loader.super_">
+        function <span class="apidocSignatureSpan">strongloop.loader.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.strongloop.loader.prototype" id="apidoc.module.strongloop.loader.prototype">module strongloop.loader.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.error" id="apidoc.element.strongloop.loader.prototype.error">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>error
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function error() {
+  var self = this;
+  var message = util.format.apply(null, arguments);
+
+  self.emit('error', new Error(message));
+
+  return self;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// License text available at https://opensource.org/licenses/Artistic-2.0
+
+require('../lib/loader')
+.createLoader({
+  manuals: require('path').resolve(__dirname, '..', 'man')
+})
+.on('error', function(err) {
+  console.<span class="apidocCodeKeywordSpan">error</span>(err.message);
+  process.exit(1);
+})
+.run();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.getRun" id="apidoc.element.strongloop.loader.prototype.getRun">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>getRun
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRun(name) {
+  var self = this;
+  var module = self.loadCommand(name);
+
+  debug('loadCommand', 'name', name,
+    'run?', module &amp;&amp; typeof module.run,
+    'usage?', module &amp;&amp; typeof module.usage);
+
+  if (module &amp;&amp; module.run) {
+    module.run.command = module.name;
+  }
+
+  return module ? module.run : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  } else if (argv[0] === '-v' || argv[0] === '--version' ||
+         argv[0] === 'version') { // For backards compatibility with docs
+return require('./version')();
+  } else if (!options._.length) {
+return self.printUsage('slc');
+  } else {
+// Otherwise, if we've provided our own command, use that.
+command = self.<span class="apidocCodeKeywordSpan">getRun</span>(options._[0]);
+
+// Build the new, command-local `argv` and `options`.
+if (command) {
+  argv = argv.slice(argv.indexOf(options._[0]) + 1);
+  options = self.parse(argv);
+} else if (self.strict) {
+  return self.error(
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.getUsage" id="apidoc.element.strongloop.loader.prototype.getUsage">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>getUsage
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getUsage(name) {
+  var self = this;
+  var module = self.loadCommand(name);
+
+  return module ? module.usage : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.loadCommand" id="apidoc.element.strongloop.loader.prototype.loadCommand">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>loadCommand
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function loadCommand(name) {
+  var self = this;
+  var module = null;
+  // Try to support slc loopback:model
+  var index = name.indexOf(':');
+  if (index !== -1) {
+    name = name.substring(0, index);
+  }
+  var command = path.resolve(this.root, String(name));
+
+  try {
+    module = require(command);
+  } catch (e) {
+    debug('require %s failed with', command, e);
+
+    if (e &amp;&amp; e.code === 'MODULE_NOT_FOUND' &amp;&amp;
+        e.message.indexOf(command) !== -1) {
+      // In this case, the command was not found. Without the indexOf(), if the
+      // command implementation had a buggy require of a module that couldn't be
+      // found, it would be handled as if the command wasn't present.
+      return null;
+    }
+
+    return self.error('Error loading module "%s":\n', name, e);
+  }
+
+  if (typeof module === 'function' || typeof module.run === 'function') {
+    module = {
+      name: name,
+      run: module.run || module,
+      usage: self.loadManual(name)
+    };
+  }
+
+  if (!CommandLoader.isCommand(module)) {
+    return null;
+  }
+
+  return module;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//
+// Returns the usage information for the **name** Command, represented as a
+// String. If **name** cannot be found, returns `null`.
+//
+CommandLoader.prototype.getUsage = getUsage;
+function getUsage(name) {
+var self = this;
+var module = self.<span class="apidocCodeKeywordSpan">loadCommand</span>(name);
+
+return module ? module.usage : null;
+}
+
+CommandLoader.prototype.printUsage = printUsage;
+function printUsage(name) {
+console.log(this.loadManual(name));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.loadManual" id="apidoc.element.strongloop.loader.prototype.loadManual">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>loadManual
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function loadManual(name) {
+  var self = this;
+
+  assert(self.manuals);
+
+  function filename(ext) {
+    return path.resolve(self.manuals, name + ext);
+  }
+
+  // Return txt files, if we have them, otherwise man pages (which require
+  // massaging on windows).
+  try {
+    return fs.readFileSync(filename('.txt'), 'utf8');
+  } catch (er) {
+<span class="apidocCodeCommentSpan">    /* eslint no-empty:0 */
+</span>  }
+
+  try {
+    var usage = fs.readFileSync(filename(''), 'utf8');
+
+    if (process.platform === 'win32') {
+      // Any char, followed by a backspace.
+      var boldPair = new RegExp('.\b', 'g');
+      var clean = usage.replace(boldPair, '');
+      usage = clean;
+    }
+    return usage;
+  } catch (er) {
+    /* eslint no-empty:0 */
+  }
+
+  return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return self.error('Error loading module "%s":\n', name, e);
+}
+
+if (typeof module === 'function' || typeof module.run === 'function') {
+  module = {
+    name: name,
+    run: module.run || module,
+    usage: self.<span class="apidocCodeKeywordSpan">loadManual</span>(name)
+  };
+}
+
+if (!CommandLoader.isCommand(module)) {
+  return null;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.parse" id="apidoc.element.strongloop.loader.prototype.parse">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>parse
+        <span class="apidocSignatureSpan">(argv, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(argv, options) {
+  return optimist(argv).options(options || {}).argv;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// Synchronously parses **argv**, or `process.argv` otherwise. If a command is
+// present, that command is run. If no command is run, the configured `fallback`
+// command is run instead.
+//
+CommandLoader.prototype.run = run;
+function run(argv) {
+var self = this;
+var options = self.<span class="apidocCodeKeywordSpan">parse</span>(argv || (argv = process.argv.slice(2)));
+var command = null;
+
+debug('slc.run:', 'argv', argv, 'options', options);
+
+if (argv[0] === '-h' || argv[0] === '--help') {
+  return self.printUsage('slc');
+} else if (argv[0] === '-v' || argv[0] === '--version' ||
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.printUsage" id="apidoc.element.strongloop.loader.prototype.printUsage">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>printUsage
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function printUsage(name) {
+  console.log(this.loadManual(name));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var self = this;
+var options = self.parse(argv || (argv = process.argv.slice(2)));
+var command = null;
+
+debug('slc.run:', 'argv', argv, 'options', options);
+
+if (argv[0] === '-h' || argv[0] === '--help') {
+  return self.<span class="apidocCodeKeywordSpan">printUsage</span>('slc');
+} else if (argv[0] === '-v' || argv[0] === '--version' ||
+           argv[0] === 'version') { // For backards compatibility with docs
+  return require('./version')();
+} else if (!options._.length) {
+  return self.printUsage('slc');
+} else {
+  // Otherwise, if we've provided our own command, use that.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.strongloop.loader.prototype.run" id="apidoc.element.strongloop.loader.prototype.run">
+        function <span class="apidocSignatureSpan">strongloop.loader.prototype.</span>run
+        <span class="apidocSignatureSpan">(argv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function run(argv) {
+  var self = this;
+  var options = self.parse(argv || (argv = process.argv.slice(2)));
+  var command = null;
+
+  debug('slc.run:', 'argv', argv, 'options', options);
+
+  if (argv[0] === '-h' || argv[0] === '--help') {
+    return self.printUsage('slc');
+  } else if (argv[0] === '-v' || argv[0] === '--version' ||
+             argv[0] === 'version') { // For backards compatibility with docs
+    return require('./version')();
+  } else if (!options._.length) {
+    return self.printUsage('slc');
+  } else {
+    // Otherwise, if we've provided our own command, use that.
+    command = self.getRun(options._[0]);
+
+    // Build the new, command-local `argv` and `options`.
+    if (command) {
+      argv = argv.slice(argv.indexOf(options._[0]) + 1);
+      options = self.parse(argv);
+    } else if (self.strict) {
+      return self.error(
+        '"%s" is not an slc command. See `slc --help` for more information.',
+        options._[0]);
+    } else {
+      command = self.getRun(self.fallback);
+    }
+  }
+
+  assert(command);
+
+  process.env.SLC_COMMAND = command.command;
+  command(argv, options, self);
+
+  return self;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.createLoader({
+  manuals: require('path').resolve(__dirname, '..', 'man')
+})
+.on('error', function(err) {
+  console.error(err.message);
+  process.exit(1);
+})
+.<span class="apidocCodeKeywordSpan">run</span>();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
